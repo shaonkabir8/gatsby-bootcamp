@@ -2,12 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 const FooterStyle = styled.div`
-  footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
   footer p {
     text-align: center;
     padding: 20px 0;
