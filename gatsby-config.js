@@ -5,5 +5,18 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: ["absolute/path/a", "absolute/path/b"],
+      },
+    },
+  ],
 }
