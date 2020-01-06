@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
 const HeaderStyle = styled.div`
@@ -22,57 +22,69 @@ const HeaderStyle = styled.div`
     font-size: 20px;
     text-decoration: none;
     padding: 10px;
-    color: #000;
-    transition: 0.2s;
-    position: relative;
-  }
-  .menu ul li a::before {
-    position: absolute;
-    left: 7px;
-    bottom: 4px;
-    width: 85%;
-    height: 2px;
-    content: "";
-    background: black;
-    opacity: 0;
+    color: #999;
     transition: 0.2s;
   }
-  .menu ul li a:hover::before {
-    opacity: 1;
+  .menu ul li a:hover {
+    color: #666;
+  }
+
+  .activeClass {
+    color: #333 !important;
   }
 `
 
-const header = () => (
-  <HeaderStyle>
-    <header className="header">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="logo">
-              <Link to="/">Shaon Kabir</Link>
+const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          author
+        }
+      }
+    }
+  `)
+  return (
+    <HeaderStyle>
+      <header className="header">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="logo">
+                <Link to="/">{data.site.siteMetadata.author}</Link>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <nav className="menu">
+                <ul>
+                  <li>
+                    <Link to="/" activeClassName="activeClass">
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/about" activeClassName="activeClass">
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/blog" activeClassName="activeClass">
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/contact" activeClassName="activeClass">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
-          <div className="col-md-6">
-            <nav className="menu">
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
         </div>
-      </div>
-    </header>
-  </HeaderStyle>
-)
-export default header
+      </header>
+    </HeaderStyle>
+  )
+}
+export default Header

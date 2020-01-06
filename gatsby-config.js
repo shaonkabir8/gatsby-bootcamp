@@ -5,6 +5,10 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "A Fullstack Gatsby Bootcamp",
+    author: "Shaon Kabir",
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-styled-components`,

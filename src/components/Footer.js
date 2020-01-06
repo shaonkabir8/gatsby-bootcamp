@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-
+import { useStaticQuery, graphql } from "gatsby"
 const FooterStyle = styled.div`
   footer p {
     text-align: center;
@@ -9,12 +9,25 @@ const FooterStyle = styled.div`
     box-shadow: 0 0 5px #333;
   }
 `
-const footer = () => (
-  <FooterStyle>
-    <footer>
-      <p className="text-center">All right reserved &copy; 2020</p>
-    </footer>
-  </FooterStyle>
-)
+const Footer = () => {
+  const data = useStaticQuery(graphql`
+    query authorName {
+      site {
+        siteMetadata {
+          author
+        }
+      }
+    }
+  `)
+  return (
+    <FooterStyle>
+      <footer>
+        <p className="text-center">
+          All right reserved 😍 {data.site.siteMetadata.author} &copy; 2020
+        </p>
+      </footer>
+    </FooterStyle>
+  )
+}
 
-export default footer
+export default Footer
