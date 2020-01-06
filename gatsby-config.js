@@ -10,16 +10,13 @@ module.exports = {
     author: "Shaon Kabir",
   },
   plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        // Add any options here
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        includePaths: ["absolute/path/a", "absolute/path/b"],
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
   ],
