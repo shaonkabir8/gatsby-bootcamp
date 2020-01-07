@@ -24,6 +24,9 @@ const HomepageStyle = styled.div`
     display: inline-block;
     margin-left: 16px;
   }
+  .homepage-content a:hover {
+    color: #a7a3a3;
+  }
   .homepage-content h3 {
     margin-bottom: 6px !important;
   }

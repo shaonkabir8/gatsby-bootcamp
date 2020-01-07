@@ -23,6 +23,7 @@ const layout = props => {
           crossorigin="anonymous"
         />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet"/> 
       </Helmet>
       <Header />
       <div className="container layout" style={{padding:"5% 0"}}>
