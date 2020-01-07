@@ -7,6 +7,8 @@ Gatsby is a free and open source framework based on React that helps developers 
 Great Gatsby Bootcamp by Andrew Mead (Mead.io). Coolest and awesome courses about learning core functionalities of JAMStack(Gatsby).
 Thanks Andrew Mead.
 
+![Gatsby Images Banner](./gatsby.jpeg)
+
 ## Topic Covered:
 
 1. Gatsby

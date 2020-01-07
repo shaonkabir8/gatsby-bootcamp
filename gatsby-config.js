@@ -12,6 +12,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,16 +23,16 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        // CommonMark mode (default: true)
-        commonmark: true,
-        // Footnotes mode (default: true)
-        footnotes: true,
-        // Pedantic mode (default: true)
-        pedantic: true,
-        // GitHub Flavored Markdown mode (default: true)
-        gfm: true,
-        // Plugins configs
-        plugins: [],
+        plugins: [
+          "gatsby-remark-relative-images",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 1100,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
       },
     },
   ],
