@@ -1,8 +1,9 @@
 import React from "react"
+import styled from "styled-components"
+import { Helmet } from 'react-helmet'
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import "../styles/style.scss"
-import styled from "styled-components"
 
 const LayoutStyle = styled.div`
   .layout {
@@ -21,6 +22,9 @@ const LayoutStyle = styled.div`
 const layout = props => {
   return (
     <LayoutStyle>
+    <Helmet>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    </Helmet>
       <div className="layout">
         <div className="layout-content">
           <Header />
