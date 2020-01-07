@@ -1,20 +1,57 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
+import ContactStyle from '../styles/ContactStyle';
+
 
 const contact = () => (
-  <Layout>
-    <Head title="Contact" />
-    <h3>Contact me</h3>
-    <p>
-      I'm available both on
-      <a href="https://facebook.com/shaon.kabir8">Facebook</a> and
-      <a href="https://twitter.com/shaonkabir8">Twitter</a>
-    </p>
-    <p>
-      Check my <a href="https://github.com/Shaonkabir">Github Profile</a>
-    </p>
-  </Layout>
+  <ContactStyle>
+    <Layout>
+      <Head title="Contact" />
+      <div className="contact-section section-padding" id="contact">
+             <div className="contact-information">
+                  <div className="container-fluid">
+                      <div className="row">
+                          <div className="col-md-4 dark-background-content">
+                              <div className="contact-info-left">
+                                  <h2>Get in Touch</h2>
+                                  <p><i className="fas fa-globe-asia"></i><span>Jashore,<br/> Khulna, Bangladesh</span></p>
+                                  <p><i className="fas fa-at"></i><span>shaonkabir98@gmail.com <br/>shaonkabir98@yahoo.com</span></p>
+                                  <p><i className="fas fa-phone"></i><span>+880 1916380678 <br/>+880 1718916293</span></p>
+                                  <h3>Stay Connected</h3>
+                                  <div className="contact-social">
+                                      <a href="https://web.facebook.com/shaon.kabir.7927" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                                      <a href="https://twitter.com/shaonkabir8" target="_blank"><i className="fab fa-twitter"></i></a>
+                                      <a href="https://www.instagram.com/shaonbd188/" target="_blank"><i className="fab fa-instagram"></i></a>
+                                      <a href="https://www.linkedin.com" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div className="col-md-8">
+                              <div className="contact-form">
+                                  <h2>Drop me line</h2>
+                                  <form action="">
+                                      <input type="text" placeholder="Enter your name" className="name" />
+                                      <input type="email" placeholder="Enter your Email" className="email" />
+                                      <div className="row">
+                                          <div className="col-md-6">
+                                              <input type="text" placeholder="Subject" className="subject" />
+                                          </div>
+                                          <div className="col-md-6">
+                                              <input type="tel" placeholder="Phone Number (Optional)" />
+                                          </div>
+                                      </div>
+                                      <textarea placeholder="Write your message" className="message"></textarea>
+                                      <a href="#" className="boxed-btn sendBtn">Send Message</a>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </Layout>
+  </ContactStyle>
 )
 
 export default contact

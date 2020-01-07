@@ -50,7 +50,6 @@ const Blog = () => {
     <BlogStyles>
       <Layout>
         <Head title="Blog" />
-        <h2>Blog Page</h2>
         <h3>Recent Posts</h3>
         <ol className="post">
           {data.allContentfulBlogPost.edges.map(edge => {

@@ -5,16 +5,6 @@ const FooterStyle = styled.div`
   footer {
     margin-top: 3rem;
   }
-  footer p {
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:100%;
-    text-align: center;
-    padding: 20px 0;
-    display: block;
-    box-shadow: 0 0 5px #333;
-  }
 `
 const Footer = () => {
   const data = useStaticQuery(graphql`
