@@ -20,7 +20,7 @@ const Footer = () => {
     <FooterStyle>
       <footer>
         <p className="text-center">
-          Site Created with lot of &#x2764; and &#x2615; by {data.site.siteMetadata.author}
+          Created by {data.site.siteMetadata.author} with lot of <i className="fas fa-heart"></i> and <i className="fas fa-coffee"></i>
         </p>
       </footer>
     </FooterStyle>

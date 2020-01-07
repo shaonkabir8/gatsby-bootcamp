@@ -1,9 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
 import AboutStyle from '../styles/AboutStyle'
-import photo from '../images/shaon.jpg'
+import myImage from '../images/shaon.jpg'
 
 const about = () => (
   <AboutStyle>
@@ -25,13 +24,13 @@ const about = () => (
               to develop my skills being updated according to trends and
               Technology
             </p>
-            <a href="" className="boxed-btn">Download CV <i className="fas fa-download"></i></a>
-            <a href="" className="boxed-btn">Github Profile <i className="fab fa-github"></i></a>
+            <a href="https://github.com/Shaonkabir" className="boxed-btn">Download CV <i className="fas fa-download"></i></a>
+            <a href="https://github.com/Shaonkabir" className="boxed-btn">Github Profile <i className="fab fa-github"></i></a>
           </div>
         </div>
         <div className="col-md-6">
           <div className="about-image text-center">
-            <img src={photo} alt="Image" />
+            <img src={myImage} alt="Myself" />
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ const indexPage = () => {
           <h3>Hello,</h3>
           <h1>I'm Shaon Kabir,</h1>
           <h4>JavaScript Lover and Open Source Entuasiast</h4>
-          <Link to="/about">More About me <i class="fas fa-long-arrow-alt-right"></i></Link>
+          <Link to="/about">More About me <i className="fas fa-long-arrow-alt-right"></i></Link>
         </div>
       </Layout>
     </HomepageStyle>

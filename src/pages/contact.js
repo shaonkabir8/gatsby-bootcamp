@@ -20,10 +20,10 @@ const contact = () => (
                                   <p><i className="fas fa-phone"></i><span>+880 1916380678 <br/>+880 1718916293</span></p>
                                   <h3>Stay Connected</h3>
                                   <div className="contact-social">
-                                      <a href="https://web.facebook.com/shaon.kabir.7927" target="_blank"><i className="fab fa-facebook-f"></i></a>
-                                      <a href="https://twitter.com/shaonkabir8" target="_blank"><i className="fab fa-twitter"></i></a>
-                                      <a href="https://www.instagram.com/shaonbd188/" target="_blank"><i className="fab fa-instagram"></i></a>
-                                      <a href="https://www.linkedin.com" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                                      <a href="https://web.facebook.com/shaon.kabir.7927" ><i className="fab fa-facebook-f"></i></a>
+                                      <a href="https://twitter.com/shaonkabir8" ><i className="fab fa-twitter"></i></a>
+                                      <a href="https://www.instagram.com/shaonbd188/" ><i className="fab fa-instagram"></i></a>
+                                      <a href="https://www.linkedin.com" ><i className="fab fa-linkedin-in"></i></a>
                                   </div>
                               </div>
                           </div>
@@ -42,7 +42,7 @@ const contact = () => (
                                           </div>
                                       </div>
                                       <textarea placeholder="Write your message" className="message"></textarea>
-                                      <a href="#" className="boxed-btn sendBtn">Send Message</a>
+                                      <a href="https://google.com" className="boxed-btn sendBtn">Send Message</a>
                                   </form>
                               </div>
                           </div>
