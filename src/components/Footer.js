@@ -2,6 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 const FooterStyle = styled.div`
+  footer {
+    margin-top: 3rem;
+  }
   footer p {
     text-align: center;
     padding: 20px 0;
@@ -23,7 +26,7 @@ const Footer = () => {
     <FooterStyle>
       <footer>
         <p className="text-center">
-          All right reserved 😍 {data.site.siteMetadata.author} &copy; 2020
+          Site Created with lot of &#x2764; and &#x2615; by {data.site.siteMetadata.author}
         </p>
       </footer>
     </FooterStyle>
