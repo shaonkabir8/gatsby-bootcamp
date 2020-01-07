@@ -36,7 +36,7 @@ const Blog = () => {
       allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
         edges {
           node {
-            titile
+            title
             publishedDate(formatString: "Do MMMM YYYY")
             slug
           }
@@ -53,9 +53,9 @@ const Blog = () => {
         <ol className="post">
           {data.allContentfulBlogPost.edges.map(edge => {
             return (
-              <li key={edge.node.titile}>
+              <li key={edge.node.title}>
                 <Link to={`/blog/${edge.node.slug}`}>
-                  <h2>{edge.node.titile}</h2>
+                  <h2>{edge.node.title}</h2>
                   <p>{edge.node.publishedDate}</p>
                 </Link>
               </li>
