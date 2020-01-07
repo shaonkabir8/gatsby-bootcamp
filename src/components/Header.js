@@ -3,9 +3,14 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 
 const HeaderStyle = styled.div`
+  .header {
+    background: #542c85;
+    color: #fff; 
+    padding: 10px 0;
+  }
   .logo a {
-    color: #000;
-    font-size: 3rem;
+    color: #fff;
+    font-size:40px;
     text-decoration: none;
     font-weight: 900;
   }
@@ -16,21 +21,22 @@ const HeaderStyle = styled.div`
   }
   .menu ul li {
     display: inline-block;
+    margin:0;
   }
   .menu ul li a {
     display: block;
     font-size: 20px;
     text-decoration: none;
-    padding: 10px;
-    color: #999;
+    padding: 15px 25px;
+    color: #9b9a9a;
     transition: 0.2s;
   }
   .menu ul li a:hover {
-    color: #666;
+    color: #ddd;
   }
 
   .activeClass {
-    color: #333 !important;
+    color: #fff !important;
   }
 `
 
@@ -52,7 +58,7 @@ const Header = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="logo">
-                <Link to="/">{data.site.siteMetadata.author}</Link>
+                <Link to="/">{data.site.siteMetadata.title}</Link>
               </div>
             </div>
             <div className="col-md-6">

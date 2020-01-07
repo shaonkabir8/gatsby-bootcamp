@@ -6,6 +6,10 @@ const FooterStyle = styled.div`
     margin-top: 3rem;
   }
   footer p {
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
     text-align: center;
     padding: 20px 0;
     display: block;

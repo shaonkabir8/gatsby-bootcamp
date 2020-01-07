@@ -1,19 +1,40 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from 'styled-components'
 import Layout from "../components/Layout"
-import Head from '../components/Head';
+import Head from "../components/Head"
 
+const HomepageStyle = styled.div`
+  .homepage-content {
+    text-align: center;
+    padding: 10%;
+  }
+  .homepage-content h1 {
+    font-weight: 900;
+    font-family: monaco;
+  }
+  .homepage-content a {
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    background:#542c85;
+    padding:15px 20px;
+  }
+`;
 
 const indexPage = () => {
   return (
-    <Layout>
-    <Head title="Home" />
-      <h2>Hello,</h2>
-      <h3>I'm Shaon Kabir, a frontend developer living in Bangladesh</h3>
-      <p>
-        Need a developer ?? <Link to="/contact">Contact me.</Link>
-      </p>
-    </Layout>
+    <HomepageStyle>
+      <Layout>
+        <Head title="Home" />
+        <div className="homepage-content">
+          <h3>Hello,</h3>
+          <h1>I'm Shaon Kabir,</h1>
+          <h4>JavaScript Lover and Open Source Entuasiast</h4>
+          <Link to="/about">More About me</Link>
+        </div>
+      </Layout>
+    </HomepageStyle>
   )
 }
 
