@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/Layout"
+import Head from "../components/Head"
 
 const BlogStyles = styled.div`
   .post {
@@ -48,6 +49,7 @@ const Blog = () => {
   return (
     <BlogStyles>
       <Layout>
+        <Head title="Blog" />
         <h2>Blog Page</h2>
         <h3>Recent Posts</h3>
         <ol className="post">

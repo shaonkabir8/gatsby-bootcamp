@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Head from "../components/Head"
 
 const contact = () => (
   <Layout>
+    <Head title="Contact" />
     <h3>Contact me</h3>
     <p>
       I'm available both on
