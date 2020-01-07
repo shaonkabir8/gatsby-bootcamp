@@ -35,5 +35,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: 'gs20d2fcngju',
+        accessToken: '4xQ7_5B_UQjAAMA37jLtyoTyppO3mnu7323zmH4Yhes',
+      },
+    },
   ],
 }
