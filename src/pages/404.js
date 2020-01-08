@@ -9,7 +9,7 @@ const notFound = props => {
 			<Head title="404" />
 			<div className="error">
 				<h3>
-					No Page Found as <mark>{window.location.pathname}</mark> !!
+					No Page Found !!
 				</h3>
 				<Link to="/">Back to Home</Link>
 			</div>
